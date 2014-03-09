@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="mery.css" />
+<title>La suppression des marins</title>
+
+</head>
+<body>
+
+	<div>
+		<img src=" http://localhost:8080/paumardproject/marin.jpg" alt=""
+			style="width: 100%; height: 173px" />
+	</div>
+
+	<div id="maDivDroite" style="float: center; clear: right;">
+	<h:form style="width: 419px; ">
+		 
+			<fieldset>
+			
+				<legend>Pour supprimer le marin : </legend>
+				
+				<table cellspacing="3" cellpadding="2" border="0">
+				 
+					<tr>
+						<td><h:outputLabel for="lastName" value="nom" /></td>
+						<td><h:inputText id="lastName"
+								value="#{marinControler.marin.nom}" /></td>
+						<td><h:commandButton value="Supprimer"
+								action="#{marinControler.delete()}" /></td>
+					</tr>
+		 
+			<tr>
+				<td><h:outputLabel for="firstName" value="prénom" /></td>
+				<td><h:inputText id="firstName"
+						value="#{marinControler.marin.prenom}" /></td>
+				<td><h:commandButton value="Supprimer"
+						action="#{marinControler.deletePrenom()}" /></td>
+			</tr>
+		</table>
+		</fieldset>
+	</h:form>
+</div>
+</body>
+</html>

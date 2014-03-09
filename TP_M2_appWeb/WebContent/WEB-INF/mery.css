@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+
+ body{
+   background-color: #723f15;
+}
+#menu{
+	width : 100%;
+	background-color : green;
+	height : 30px;
+}
+ 
+#creer{
+	margin : 20px;
+	
+	border : 2px black;
+	color : white;
+	background-color: green;
+	
+	
+}
+#creer:hover{
+	
+	color : blue;
+    cursor : pointer;
+	
+}
+ 
