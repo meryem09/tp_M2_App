@@ -11,7 +11,7 @@ import javax.inject.Named;
 
 import ejb.MarinEJB;
 import Model.Marin;
-
+//
 @SuppressWarnings("serial")
 @Named("marinControler")
 @SessionScoped
